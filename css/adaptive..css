@@ -1,0 +1,360 @@
+/*                 BREAK POINTS
+phone: up to 480px 
+tablet: up to 768px 
+laptop: up to 1200px */
+
+/*///////////////// PHONE///////////////////// */
+@media screen and (max-width: 767px) {
+.fifth-item{
+    margin: 0 auto;
+   }
+}
+
+
+
+/*//////////////////////// TABLET /////////////////*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .third-section-item {
+    width: calc((100% - 24px)/2);
+    
+  }
+
+  .third-section-list{
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    flex-direction: row;
+  }
+  .mission,
+  .apps {
+    text-align: left;
+  }
+
+  .fifth-list {
+    gap: 64px 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-left: 93px;
+  }
+  .customers-link {
+      width: 168px;
+  }
+
+  .customers-list {
+      width: 552px;
+      column-gap: 24px;
+      margin: 0 auto;
+  }
+
+  .footer-p {
+     width: 264px;
+}
+.footer-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.footer1 {
+    text-align: left;
+    margin-right: 24px;
+    margin-left: 108px;
+}
+
+.footer2 {
+    text-align: left;
+    margin-left: 24px;
+    margin: 0;
+}
+
+.footer3 {
+    margin-left: 108px;
+    margin-top: 72px;
+    display: flex;
+    text-align: left;
+}
+
+.btn-form {
+    padding-top: 40px;
+    margin-left: 24px;
+}
+
+.footer-input {
+    width: 264px;
+}
+
+.plane-icon {
+    right: 25px;
+    bottom: 20px;
+    transform: translateY(50%);
+}
+
+.second-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+}
+
+.header-main {
+    font-size: 56px;
+    line-height: calc(60 / 56);
+    width: 496px;
+    margin-bottom: 36px;
+}
+.modal {
+    width: 408px;
+    padding: 72px 25px 24px 23px;
+}
+
+.nav-header,
+.header-menu,
+.address-section {
+    display: block;
+    display: flex;
+}
+
+.address{
+    display: block; 
+    display: flex; 
+    margin-left: auto;
+}
+.address-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+   
+}
+.address-link {
+    color: var(--color-slate);
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+}
+.address-item{
+    margin-left: 0; 
+}
+.web {
+    margin-right: 120px;
+}
+}
+
+
+/*//////////////////// LAPTOP  //////////*/
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.third-section-item {
+    width: 264px;
+}
+
+.third-section-list{
+    flex-wrap: nowrap;
+}
+
+.mission,
+.apps {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+}
+
+.mission-p,
+.apps-p {
+    font-weight: 400;
+}
+
+.svg-box {
+    display: block;
+    background-color: var(--color-cloud);
+    border-radius: 4px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-fourth {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.fourth-section {
+    padding-top: 0px;
+}
+
+.fourth-list {
+    display: flex;
+    padding-left: 0px;
+    gap: 24px;
+}
+.fifth-list {
+    display: flex;
+    padding-left: 0px;
+    gap: 24px;
+}
+.customers-list {
+    width: 100%;
+}
+
+.footer-container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.footer1{
+    margin: 0;
+}
+.footer2 {
+    margin-left: 120px;
+    margin-right: 80px;
+}
+ .footer3 {
+    margin: 0;
+    
+ }
+    
+.plane-icon {
+    right: 24px;
+    bottom: 45%;
+    transform: translateY(50%);
+}
+
+.second-section {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+}
+
+.header-menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* .active::after {
+    content: '';
+    background-color: var(--color-ocean);
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    bottom: -1px;
+    position: absolute;
+}
+
+.active2::after {
+    width: 66px;
+    position: absolute;
+    bottom: -1px;
+}
+
+.web {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc (21 / 18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-iris);
+    margin-right: 76px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.studio {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc (21 / 18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-navy-blue);
+} */
+
+
+.header-menu-link {
+    color: var(--color-navy-blue);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: calc(24 / 16);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
+
+/* .active {
+    color: var(--color-ocean);
+    position: relative;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: var(--color-ocean);
+} */
+
+/* .address-item:not(:first-child) {
+    margin-left: 40px;
+} */
+.address-section{
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+
+.address-link {
+    color: var(--color-slate);
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--color-ocean);
+}
+.modal {
+    padding: 24px;
+    padding-top: 72px;
+}
+}
+
+
+/* ///////////////////////PICTURES TABLET////////////////////*/
+@media screen and (min-width: 481px) {
+.second-section {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/2x_convert/Dark-bg_tab.webp);
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+.second-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/2x_convert/Dark-bg_tab@2x.webp);
+  }
+}
+}
+
+/* ///////////////////////PICTURES DESKTOP/////////////////////*/
+@media screen and (min-width: 769px) {
+    .second-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/2x_convert/people-office\ 1_desk.webp);
+    }
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .second-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/2x_convert/people-office\ 1_desk@2x.webp);
+    }
+    }
+}

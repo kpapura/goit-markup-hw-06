@@ -15,15 +15,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/adaptive..css" />
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
+        <a class="web" href="./index.html"
+          >Web<span class="studio">Studio</span></a
+        >
         <nav class="nav-header">
-          <a class="web" href="./index.html"
-            >Web<span class="studio">Studio</span></a
-          >
           <ul class="header-menu list">
             <li class="header-menu-item">
               <a class="header-menu-link active" href="./index.html">Studio</a>
@@ -51,6 +53,17 @@
             </li>
           </ul>
         </address>
+        <div class="burger-menu">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="burger js-open-menu" width="32" height="22">
+              <use href="./images/icons.svg#burger"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -123,28 +136,73 @@
           <h2 class="header2">What Are We Doing</h2>
           <ul class="fourth-list">
             <li class="fourth-item">
-              <img
-                width="360"
-                height="300"
-                src="./images/img1.jpg"
-                alt="computer with statistics"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/new/computer_desk.webp    1x,
+                    ./images/new/computer_desk@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/new/computer_desk.jpg    1x,
+                    ./images/new/computer_desk@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  width="360"
+                  height="300"
+                  src="./images/new/computer_desk.jpg"
+                  alt="computer with statistics"
+              /></picture>
             </li>
             <li class="fourth-item">
-              <img
-                width="360"
-                height="300"
-                src="./images/img2.jpg"
-                alt="phone"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/new/hand_desk.webp    1x,
+                    ./images/new/hand_desk@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/new/hand_desk.jpg    1x,
+                    ./images/new/hand_desk@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  width="360"
+                  height="300"
+                  src="./images/new/hand_desk.jpg"
+                  alt="phone"
+              /></picture>
             </li>
             <li class="fourth-item">
-              <img
-                width="360"
-                height="300"
-                src="./images/img3.jpg"
-                alt="phone on the hand"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/new/phone_desk.webp    1x,
+                    ./images/new/phone_desk@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/new/phone_desk.jpg    1x,
+                    ./images/new/phone_desk@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  width="360"
+                  height="300"
+                  src="./images/new/phone_desk.jpg"
+                  alt="phone on the hand"
+              /></picture>
             </li>
           </ul>
         </div>
@@ -155,12 +213,62 @@
           <h2 class="header2">Our Team</h2>
           <ul class="fifth-list">
             <li class="fifth-item">
-              <img
-                width="264"
-                height="260"
-                src="./images/imgmen1.jpg"
-                alt="Mark Guerrero"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img_desk.webp    1x,
+                    ./images/2x_convert/img_desk@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img_desk.jpg    1x,
+                    ./images/2x_convert/img_desk@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img_tab.webp    1x,
+                    ./images/2x_convert/img_tab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img_tab.jpg    1x,
+                    ./images/2x_convert/img_tab@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img_mob.webp    1x,
+                    ./images/2x_convert/img_mob@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img_mob.jpg    1x,
+                    ./images/2x_convert/img_mob@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  width="264"
+                  height="260"
+                  src="./images/2x_convert/img_mob.jpg"
+                  alt="Mark Guerrero"
+                />
+              </picture>
               <div class="container-for-names">
                 <h3 class="names">Mark Guerrero</h3>
                 <p class="names-p">Product Designer</p>
@@ -197,12 +305,55 @@
               </div>
             </li>
             <li class="fifth-item">
-              <img
-                width="264"
-                height="260"
-                src="./images/imgmen2.jpg"
-                alt="Tom Ford"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img1_desk.webp    1x,
+                    ./images/2x_convert/img1_desk@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img1_desk.jpg    1x,
+                    ./images/2x_convert/img1_desk@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img2_tab.webp    1x,
+                    ./images/2x_convert/img2_tab@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img2_tab.jpg      1x,
+                    ./images/2x_convert/img2_tab@2x.jpg2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img2_mob.webp    1x,
+                    ./images/2x_convert/img2_mob@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img2_mob.jpg    1x,
+                    ./images/2x_convert/img2_mob@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  width="264"
+                  height="260"
+                  src="./images/2x_convert/img2_mob.webp"
+                  alt="Tom Ford"
+              /></picture>
               <div class="container-for-names">
                 <h3 class="names">Tom Ford</h3>
                 <p class="names-p">Frontend Developer</p>
@@ -239,12 +390,55 @@
               </div>
             </li>
             <li class="fifth-item">
-              <img
-                width="264"
-                height="260"
-                src="./images/imgmen3.jpg"
-                alt="amila Garcia"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img3_desk.webp    1x,
+                    ./images/2x_convert/img3_desk@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img3_desk.jpg    1x,
+                    ./images/2x_convert/img3_desk@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img3_tab.webp    1x,
+                    ./images/2x_convert/img3_tab@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img3_tab.jpg    1x,
+                    ./images/2x_convert/img3_tab@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img3_mob.webp    1x,
+                    ./images/2x_convert/img3_mob@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img3_mob.jpg    1x,
+                    ./images/2x_convert/img3_mob@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  width="264"
+                  height="260"
+                  src="./images/2x_convert/img3_mob.webp"
+                  alt="amila Garcia"
+              /></picture>
               <div class="container-for-names">
                 <h3 class="names">Camila Garcia</h3>
                 <p class="names-p">Marketing</p>
@@ -281,12 +475,55 @@
               </div>
             </li>
             <li class="fifth-item">
-              <img
-                width="264"
-                height="260"
-                src="./images/imgmen4.jpg"
-                alt="Daniel Wilson"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img4_desk.webp    1x,
+                    ./images/2x_convert/img4_desk@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/2x_convert/img4_desk.jpg    1x,
+                    ./images/2x_convert/img4_desk@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img4_tab.webp    1x,
+                    ./images/2x_convert/img4_tab@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/2x_convert/img4_tab.jpg    1x,
+                    ./images/2x_convert/img4_tab@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img4_mob.webp    1x,
+                    ./images/2x_convert/img4_mob@2x.webp 2x
+                  "
+                  type="image/webp" />
+                <source
+                  media="(max-width:767px)"
+                  srcset="
+                    ./images/2x_convert/img4_mob.jpg    1x,
+                    ./images/2x_convert/img4_mob@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <img
+                  width="264"
+                  height="260"
+                  src="./images/2x_convert/img4_mob.webp"
+                  alt="Daniel Wilson"
+              /></picture>
               <div class="container-for-names">
                 <h3 class="names">Daniel Wilson</h3>
                 <p class="names-p">UI Designer</p>
@@ -438,6 +675,79 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="mob-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <div class="nav-mob-menu">
+        <nav class="nav-mob--header">
+          <ul class="header-mob-menu">
+            <li class="header-mob-menu-item">
+              <a class="header-mob-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="header-mob-menu-item">
+              <a class="header-mob-menu-link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="header-mob-menu-item">
+              <a class="header-mob-menu-link blue" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="address-mob-menu">
+        <address class="address-mob-menu">
+          <ul class="address-mob-section list">
+            <li class="address-mob-item">
+              <a class="address-mob" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-mob-item">
+              <a class="address-email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div class="social-mob-menu">
+        <ul class="social-mob-list">
+          <li class="social-mob-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-mob-item">
+            <a href="" class="social-link">
+              <svg class="social-mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-mob-item">
+            <a href="" class="social-link">
+              <svg class="social-mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-mob-item">
+            <a href="" class="social-link">
+              <svg class="social-mob-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -454,21 +764,23 @@
             <input
               placeholder="Name"
               class="modal-input"
-              type=""
+              type="text"
               id="user_name"
+              name="user_name"
             />
             <svg class="user-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
 
-          <label class="modal-label" for="user_email">Phone</label>
+          <label class="modal-label" for="user_phone">Phone</label>
           <div class="icons">
             <input
               placeholder="Phone number"
               class="modal-input"
-              type=""
+              type="tel"
               id="user_phone"
+              name="user_phone"
             />
             <svg class="user-icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
@@ -480,8 +792,9 @@
             <input
               placeholder="Email"
               class="modal-input"
-              type=""
+              type="email"
               id="user_email"
+              name="user_email"
             />
 
             <svg class="user-icon" width="18" height="18">
@@ -499,7 +812,11 @@
           ></textarea>
 
           <label class="modal-form-checkbox">
-            <input class="visually-hidden checkbox-input" type="checkbox" />
+            <input
+              class="visually-hidden checkbox-input"
+              name="checkbox"
+              type="checkbox"
+            />
             <svg class="checkbox-icon" width="18" height="18">
               <use class="checked" href="./images/icons.svg#checked"></use>
               <use class="unchecked" href="./images/icons.svg#unchecked"></use>
@@ -513,6 +830,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
