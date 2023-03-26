@@ -657,25 +657,25 @@
           </ul>
         </div>
         <div class="footer3">
+          <p class="social-text display">Subscribe</p>
           <form class="footer-form" name="subscribe">
-            <label class="social-text display" for="sub_email">Subscribe</label>
             <input
               type="email"
               class="footer-input"
               id="sub_email"
               placeholder="Email"
             />
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="plane-icon" width="24" height="24">
+                <use href="./images/icons.svg#plane"></use>
+              </svg>
+            </button>
           </form>
-          <div class="btn-form">
-            <button class="footer-btn" type="submit">Subscribe</button>
-            <svg class="plane-icon" width="24" height="24">
-              <use href="./images/icons.svg#plane"></use>
-            </svg>
-          </div>
         </div>
       </div>
     </footer>
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-box menu-container js-menu-container" id="mobile-menu">
       <button type="button" class="menu-toggle js-close-menu">
         <svg class="mob-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
@@ -698,7 +698,7 @@
           </ul>
         </nav>
       </div>
-      <div class="address-mob-menu">
+      <div class="address-mob-menu social-mob-menu">
         <address class="address-mob-menu">
           <ul class="address-mob-section list">
             <li class="address-mob-item">
@@ -713,8 +713,7 @@
             </li>
           </ul>
         </address>
-      </div>
-      <div class="social-mob-menu">
+
         <ul class="social-mob-list">
           <li class="social-mob-item">
             <a href="" class="social-link">
@@ -826,7 +825,13 @@
         </form>
       </div>
     </div>
-    <script src="./js/menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

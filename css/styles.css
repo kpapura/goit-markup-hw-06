@@ -123,6 +123,11 @@ a {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
+.menu-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .menu-container.is-open {
     transform: translateX(0);
@@ -136,7 +141,7 @@ a {
 }
 .header-mob-menu{
     padding-left: 0;
-    margin-bottom: 204px;
+    /* margin-bottom: 204px; */
 }
 .header-mob-menu-link{
     font-weight: 700;
@@ -154,6 +159,7 @@ a {
 
 .address-mob-item{
     margin-bottom: 40px;
+    font-style: normal;
 }
 .address-mob{
     font-weight: 700;
@@ -161,6 +167,7 @@ a {
     line-height: calc(40/36);
     letter-spacing: 0.02em;
     color: var(--color-iris);
+    
 }
 .address-email{
     font-weight: 500;
@@ -169,14 +176,16 @@ a {
     letter-spacing: 0.02em;
     color: var(--color-slate);
 }
+
 .social-mob-menu{
-    display: flex;
+    /* display: flex; */
 }
 .social-mob-list{
     display: flex;
     gap: 56px;
     padding-left: 0;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* /////////////////////////////////////////// */
@@ -343,11 +352,12 @@ color: var(--color-ocean);
     padding-left: 0px;
     justify-content: start;
     gap: 72px;
+    justify-content: center;
 }
-.third-section-item {
+/* .third-section-item {
     width: 396px;
     
-}
+} */
 
 .svg-box {
     display: none;
@@ -635,19 +645,19 @@ footer {
     justify-content: center;
     align-items:center ;
     border: 1px solid var(--color-light-slate);
-    width: 190px;
+    width: 187px;
     height: 88px;
     border-radius: 4px; 
     outline: transparent;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list {
-    width: 396px;
     display: flex;
     padding-left: 0px;
     column-gap: 16px;
     row-gap: 72px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .customers-icon{
@@ -853,6 +863,7 @@ footer {
         text-align: left;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
          250ms cubic-bezier(0.4, 0, 0.2, 1);
+         position: relative;
     }
     .footer-btn:hover,
     .footer-btn:focus {
@@ -860,10 +871,6 @@ footer {
     }
     .display{
         display: block;
-    }
-    .btn-form{
-        padding-top: 16px;
-        position: relative;
     }
    
     .footer-input{
@@ -875,6 +882,7 @@ footer {
         outline: transparent;
         background-color: var(--color-navy-blue);
         padding: 8px 16px;
+        margin-bottom: 16px;
     }
     .footer-input::placeholder{
         font-weight: 400;
@@ -890,8 +898,8 @@ footer {
     }
     .plane-icon{
         position: absolute;
-        right: 135px;
-        bottom: 8px;
+        right: 25px;
+        bottom: 9px;
     }
            
        
