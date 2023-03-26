@@ -9,7 +9,44 @@ laptop: up to 1200px */
     margin: 0 auto;
    }
 }
-
+@media screen and (max-width: 419px) {
+    .address-mob,
+    .address-email,
+    .header-mob-menu-link
+     {
+        font-size: 25px;
+    }
+    .social-mob-list{
+        gap: 25px;
+    }
+    .modal{
+        width: 270px;
+        padding: 45px 10px 20px 10px;
+    }
+    .btn{
+        width: 150px;
+        height: 45px;
+        }
+    .modal-form-text,
+    .underline,
+    .modal-textarea::placeholder,
+    .modal-input::placeholder,
+    .modal-strong
+    {
+        font-size: 12px;
+    }
+    .modal-input{
+        height: 35px;
+        padding: 6px 30px;
+    }
+    .modal-btn{
+        right: 0;
+        top: 0;
+    }
+    .modal-form-checkbox {
+        margin-bottom: 20px;
+}
+}
 
 
 /*//////////////////////// TABLET /////////////////*/
@@ -240,7 +277,7 @@ laptop: up to 1200px */
     margin-right: 30px;
 }
 
-/* .active::after {
+.active::after {
     content: '';
     background-color: var(--color-ocean);
     display: block;
@@ -278,7 +315,7 @@ laptop: up to 1200px */
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-navy-blue);
-} */
+}
 
 
 .header-menu-link {

@@ -153,9 +153,6 @@ a {
 .header-mob-menu-item:not(:last-child){
     margin-bottom: 40px;
 }
-.blue{
-    color: var(--color-ocean);
-}
 
 .address-mob-item{
     margin-bottom: 40px;
@@ -213,7 +210,7 @@ a {
 .header-menu-item:not(:last-child) {
     margin-right: 30px;
 }
-.active::after {
+/* .active::after {
     content: '';
     background-color: var(--color-ocean);
     display: block;
@@ -222,7 +219,7 @@ a {
     border-radius: 2px;
     bottom: -1px;
     position: absolute;
-}
+} */
 .active2::after {
     width: 66px;
     position: absolute;
@@ -345,6 +342,7 @@ color: var(--color-ocean);
 
 .third-section {
     display: flex;
+    justify-content: center;
 }
 .third-section-list {
     display: flex;
@@ -352,12 +350,11 @@ color: var(--color-ocean);
     padding-left: 0px;
     justify-content: start;
     gap: 72px;
-    justify-content: center;
-}
-/* .third-section-item {
-    width: 396px;
     
-} */
+}
+.third-section-item {
+    max-width: 396px;
+}
 
 .svg-box {
     display: none;
@@ -807,7 +804,7 @@ footer {
     .modal-form-checkbox{
         display: flex;
         margin-bottom: 24px;
-        gap: 5px;
+        gap: 0;
         
     }
     .modal-form-text{
@@ -875,6 +872,7 @@ footer {
    
     .footer-input{
         width: 100%;
+        max-width: 398px;
         height: 40px;
         border: 1px solid #FFFFFF;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
